@@ -18,3 +18,4 @@ end
 require 'albion-api/user_killboard.rb'
 require 'albion-api/user_search.rb'
 require 'albion-api/guild_search.rb'
+require 'albion-api/guild_members.rb'
