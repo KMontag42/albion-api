@@ -20,6 +20,7 @@ module AlbionApi
         player = response['players'][0]
         @_api_id = player['Id']
         @_guild_api_id = player['GuildId']
+        @_guild_name = player['GuildName']
       end
 
       def api_id
@@ -30,9 +31,13 @@ module AlbionApi
         @_guild_api_id
       end
 
+      def guild_name
+        @_guild_name
+      end
+
       private
 
-      attr_accessor :_api_id, :_guild_api_id
+      attr_accessor :_api_id, :_guild_api_id, :_guild_name
     end
   end
 end

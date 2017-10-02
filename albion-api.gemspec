@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'albion-api'
-  s.version     = '0.2.0'
+  s.version     = '0.2.1'
   s.date        = '2017-10-02'
   s.summary     = 'A Ruby Library for the Albion Online API'
   s.description = 'This is a gem that wraps the Albion Online API.'
