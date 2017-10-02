@@ -1,2 +1,2 @@
 require 'minitest/autorun'
-require 'albion-api'
+require 'albion-api.rb'
