@@ -7,7 +7,8 @@ describe AlbionApi::UserKillboard do
 
   describe 'top_kills_in_range' do
     it 'returns an instance of the response class' do
-      @client.top_kills_in_range(Time.now-2.day, Time.now)
+      two_days_ago = Time.now - (2 * 60 * 60 * 24)
+      @client.top_kills_in_range(two_days_ago, Time.now)
              .class.must_equal AlbionApi::UserKillboard::Response
     end
   end
