@@ -1,3 +1,5 @@
+require 'test_helper'
+
 describe AlbionApi::UserSearch do
   before do
     @client = AlbionApi::UserSearch.new('TKM420')
@@ -15,6 +17,14 @@ describe AlbionApi::UserSearch do
 
       it 'has the correct API Id' do
         @response.api_id.must_equal '3MbmlPMqTRCtX4ncMMhx0w'
+      end
+
+      it 'has the correct Guild API Id' do
+        @response.guild_api_id.must_equal 'z-wCJdjQT2u16bH8lfcqjA'
+      end
+
+      it 'has the correct Guild Name' do
+        @response.guild_name.must_equal 'Glorious Nomads'
       end
     end
   end
