@@ -10,7 +10,7 @@ module AlbionApi
     class Response
       def initialize(response)
         @_categories = response.map do |item|
-          WeaponCategory.new(item['id'], item['name'])
+          AlbionApi::Entity::WeaponCategory.new(item['id'], item['name'])
         end
       end
 
@@ -21,8 +21,6 @@ module AlbionApi
       private
 
       attr_accessor :_categories
-
-      WeaponCategory = Struct.new(:id, :name)
     end
   end
 end

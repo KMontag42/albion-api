@@ -14,9 +14,13 @@ module AlbionApi
 
     attr_accessor :character_api_id
 
+    # the response class for the Deaths API
     class Response
       def initialize(response)
-        @_deaths = JSON.parse(response.body)
+        raw_data = JSON.parse(response.body)
+        @_deaths = raw_data.map do |raw|
+          AlbionApi::Entity::Helper.create_death(raw)
+        end
       end
 
       def deaths

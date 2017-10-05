@@ -14,6 +14,12 @@ module AlbionApi
   end
 end
 
+# require our API Entities for use in our Request classes
+require 'albion-api/entities.rb'
+
+# require our Entity Helper
+require 'albion-api/helpers/entity_helper.rb'
+
 # require all of our classes that belong to this module
 require 'albion-api/user_killboard.rb'
 require 'albion-api/user_search.rb'

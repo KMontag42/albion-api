@@ -19,7 +19,7 @@ describe AlbionApi::WeaponCategories do
       end
 
       it 'contains a list of WeaponCategory instances' do
-        subject.categories.first.class.must_equal AlbionApi::WeaponCategories::Response::WeaponCategory
+        subject.categories.first.class.must_equal AlbionApi::Entity::WeaponCategory
       end
 
       it 'contains a list of all the current weapon categories' do

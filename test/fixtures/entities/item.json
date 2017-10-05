@@ -1,0 +1,7 @@
+{
+    "ActiveSpells": [],
+    "Count": 1,
+    "PassiveSpells": ["COOL_SPELL"],
+    "Quality": 1,
+    "Type": "COOL_TYPE"
+}
